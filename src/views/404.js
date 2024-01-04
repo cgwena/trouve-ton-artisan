@@ -1,6 +1,9 @@
 const Page404 = () => {
     return (
-        <div></div>
+        <div className="page">
+            <h2>Erreur 404</h2>
+            <p>Page non trouvée</p>
+        </div>
     )
 }
 
