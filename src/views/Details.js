@@ -1,6 +1,9 @@
 const Details = () => {
     return (
-        <div></div>
+        <div className="page">
+            <h2>Nom artisan</h2>
+            <div className="sep1"></div>
+        </div>
     )
 }
 
