@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Graphik";
+    font-weight: 400;
+    src: url("fonts/GraphikRegular.woff") format("woff"),
+    url("fonts/GraphikRegular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-weight: 700;
+    src: url("fonts/GraphikBold.woff") format("woff"),
+    url("fonts/GraphikBold.ttf") format("truetype")
+}
+
+ul {
+    font-family: 'Graphik';
+}
+
+img {
+  width: 100%;
+}
+
+.bold {
+    font-family: 'Graphik';
+    font-weight: bold;
+}
+
+.regular {
+    font-family: 'Graphik';
+}
