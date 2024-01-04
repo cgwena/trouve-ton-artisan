@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import List from './views/List-result-search';
 import Details from './views/Details';
+import Page404 from './views/404';
 import './App.scss';
 
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Details />
+      <Page404 />
       <Footer />
     </div>
   );
