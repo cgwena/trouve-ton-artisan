@@ -12,6 +12,26 @@
     url("fonts/GraphikBold.ttf") format("truetype")
 }
 
+@mixin separation {
+    width: 50px;
+    height: 15px;
+}
+
+@mixin color($background) {
+    background-color: $background;
+}
+
+.sep1 {
+    @include separation;
+    @include color(#CD2C2E)
+}
+
+.sep2 {
+    @include separation;
+    @include color(#82B864)
+}
+
+
 ul {
     font-family: 'Graphik';
 }
@@ -25,4 +45,8 @@ footer {
         color:white;
         text-decoration: none;
     }
+}
+
+.page {
+    min-height: 100vh;
 }

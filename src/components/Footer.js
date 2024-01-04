@@ -1,16 +1,16 @@
 const Footer = () => {
     return (
-        <footer className="bg-primary text-white position-absolute bottom-0 w-100">
+        <footer className="bg-primary text-white">
             <div className="container">
                 <div>
                     <address>
                         <h2>Lyon</h2>
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i className="fa-solid fa-location-dot"></i>
                         <p>101 Cours Charlemagne</p>
                         <p>CS 20033</p>
                         <p>69269 LYON CEDEX 02</p>
                         <p>FRANCE</p>
-                        <i class="fa-solid fa-phone"></i>
+                        <i className="fa-solid fa-phone"></i>
                         <a href="tel:04 26 73 4000"> +33 (0)4 26 73 4000</a>
                     </address>
                 </div>
