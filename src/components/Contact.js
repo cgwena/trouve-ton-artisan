@@ -1,13 +1,20 @@
 const Contact = (props) => {
     return (
         <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Nom</label>
-                <input type="email" class="form-control" id="name" placeholder="name@example.com"></input>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <div className="mb-3 row">
+                    <div className=" col-lg-6 col-md-6">
+                        <label for="name" className="form-label">Nom</label>
+                        <input type="text" className="form-control" id="name" placeholder="Jean Dupont"></input>
+                    </div>
+                    <div className=" col-lg-6 col-md-6">
+                        <label for="subject" className="form-label">Objet</label>
+                        <input type="text" className="form-control" id="subject" placeholder="Objet"></input>
+                    </div>
+                </div>
+           
+            <div className="mb-3">
+                <label for="message" className="form-label">Message</label>
+                <textarea className="form-control" id="message" rows="3"></textarea>
             </div>
         </form>
     )
