@@ -50,4 +50,15 @@ footer {
 .page {
     min-height: 100vh;
     padding: 24px 120px;
+
+        li {
+            list-style:none ;
+        }
+
+        ol {
+            li {
+                list-style: decimal;
+            }
+        }
+        
 }
