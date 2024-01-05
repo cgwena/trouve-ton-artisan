@@ -1,17 +1,30 @@
+import list from '../datas/datas.json';
+import Card from '../components/Card-artisan';
+
 const Home = () => {
+    const artisans = list.map(list => {
+        return <Card name={list.name} specialty={list.specialty} location={list.location} btn="En savoir plus" key={list.id} />
+    })
+
     return (
         <div className="page">
             <h1>Les artisans de la région</h1>
             <div className="sep1"></div>
-            <h2>Comment trouver mon artisan ?</h2>
-            <ol>
-                <li>Choisir la catégorie d’artisanat dans le menu.</li>
-                <li>Choisir un artisan.</li>
-                <li>Le contacter via le formulaire de contact.</li>
-                <li>Une réponse sera apportée sous 48h.</li>
-            </ol>
+            <div>
+                <h2>Comment trouver mon artisan ?</h2>
+                <ol>
+                    <li>Choisir la catégorie d’artisanat dans le menu.</li>
+                    <li>Choisir un artisan.</li>
+                    <li>Le contacter via le formulaire de contact.</li>
+                    <li>Une réponse sera apportée
+                    sous 48h.</li>
+                </ol>
+            </div>
             <div className="sep2"></div>
             <h2>Les artisans du mois</h2>
+            <div className='row list-card'>
+                {artisans}
+            </div>
         </div>
     )
 }
