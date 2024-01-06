@@ -1,10 +1,22 @@
+import { useParams } from 'react-router-dom';
+
 import list from '../datas/datas.json';
 import Card from '../components/Card-artisan';
 
 const List = () => {
 
-  const artisans = list.map(list => {
-    return <Card name={list.name} specialty={list.specialty} location={list.location} btn="En savoir plus" key={list.id} />
+  const { artisanCategory } = useParams()
+  
+  const selectedArtisans = list.filter(artisan => artisan.category === artisanCategory)
+
+  const artisans = selectedArtisans.map(artisan => {
+    return <Card
+      name={artisan.name}
+      specialty={artisan.specialty}
+      location={artisan.location}
+      btn="En savoir plus"
+      key={artisan.id}
+      id={artisan.id} />
   })
   return (
     <div className="page">

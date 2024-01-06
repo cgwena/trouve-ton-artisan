@@ -15,8 +15,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/searchresults" element={<List />} />
-        <Route path="/details" element={<Details />} />
+        <Route path="/searchresults/:artisanCategory" element={<List />} />
+        <Route path="/details/:artisanId" element={<Details />} />
         <Route path="/*" element={<Page404 />} />
       </Routes>
       <Footer />
