@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-white shadow">
             <div className="container-fluid">
-                <a className="navbar-brand logo" href="#"><img src="Logo.png"></img></a>
+                <a className="navbar-brand logo" href="/"><img src="Logo.png"></img></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -13,16 +15,16 @@ const Header = () => {
                     </form>
                     <ul className="navbar-nav d-flex justify-content-around">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Bâtiment</a>
+                            <Link to={"/searchresults/Bâtiment"} className="nav-link active" aria-current="page">Bâtiment</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Service</a>
+                            <Link to={"/searchresults/Services"} className="nav-link">Service</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Fabrication</a>
+                            <Link to={"/searchresults/Fabrication"} className="nav-link">Fabrication</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled">Alimentation</a>
+                            <Link to={"/searchresults/Alimentation"} className="nav-link">Alimentation</Link>
                         </li>
                     </ul>
                 </div>

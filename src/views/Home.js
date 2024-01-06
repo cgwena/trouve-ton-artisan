@@ -2,8 +2,16 @@ import list from '../datas/datas.json';
 import Card from '../components/Card-artisan';
 
 const Home = () => {
-    const artisans = list.map(list => {
-        return <Card name={list.name} specialty={list.specialty} location={list.location} btn="En savoir plus" key={list.id} />
+    const topArtisans = list.filter(artisan => artisan.top);
+
+    const artisans = topArtisans.map(artisan => {
+        return <Card
+            name={artisan.name}
+            specialty={artisan.specialty}
+            location={artisan.location}
+            btn="En savoir plus"
+            key={artisan.id}
+            id={artisan.id} />
     })
 
     return (
@@ -27,6 +35,8 @@ const Home = () => {
             </div>
         </div>
     )
+
+    
 }
 
 export default Home
