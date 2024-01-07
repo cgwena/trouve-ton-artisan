@@ -10,7 +10,8 @@ const Results = ({ data, searchTerm }) => {
             location={artisan.location}
             btn="En savoir plus"
             key={artisan.id}
-            id={artisan.id} />
+            id={artisan.id}
+            note={artisan.note } />
     })
     return (
         <div className="page">

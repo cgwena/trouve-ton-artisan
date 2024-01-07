@@ -20,6 +20,7 @@ const Details = () => {
                     specialty={selectedArtisan.specialty}
                     location={selectedArtisan.location}
                     website={selectedArtisan.website}
+                    note={selectedArtisan.note}
                 />
                 <About
                     about={selectedArtisan.about} 
