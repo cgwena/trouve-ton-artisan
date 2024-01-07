@@ -2,14 +2,6 @@ import list from '../datas/datas.json';
 import Card from '../components/Card-artisan';
 
 const Home = () => {
-    list.forEach(artisan => {
-        if (artisan.note) {
-            console.log(artisan.note);
-        } else {
-            console.log("Note non disponible");
-        }
-    });
-
     const topArtisans = list.filter(artisan => artisan.top);
 
     const artisans = topArtisans.map(artisan => {

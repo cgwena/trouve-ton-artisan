@@ -6,9 +6,11 @@ const Card = (props) => {
             <div className="card m-3">
                 <div className="card-body">
                     <h3 className="card-title text-center">{props.name}</h3>
-                    <Rating note={props.note} />
-                    <h5 className="card-text text-center">{props.specialty}</h5>
-                    <h5 className="card-text text-center">{props.location}</h5>
+                    <div className='text-center'>
+                        <Rating note={props.note} />
+                    </div>
+                    <h4 className="card-text text-center">{props.specialty}</h4>
+                    <h4 className="card-text text-center">{props.location}</h4>
                     <div className="card-text text-center"><a href={props.website} target="_blank" rel="noreferrer">{props.website}</a>
                     </div>
                 </div>

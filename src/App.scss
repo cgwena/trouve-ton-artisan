@@ -1,15 +1,50 @@
 @font-face {
     font-family: "Graphik";
     font-weight: 400;
-    src: url("fonts/GraphikRegular.woff") format("woff"),
-    url("fonts/GraphikRegular.ttf") format("truetype")
+    src:
+        url("fonts/GraphikRegular.woff") format("woff"),
+        url("fonts/GraphikRegular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Graphik";
     font-weight: 700;
-    src: url("fonts/GraphikBold.woff") format("woff"),
-    url("fonts/GraphikBold.ttf") format("truetype")
+    src:
+        url("fonts/GraphikBold.woff") format("woff"),
+        url("fonts/GraphikBold.ttf") format("truetype");
+}
+
+$color1: #f1f8fc;
+$color2: #0074c7;
+$color3: #00497c;
+$color4: #384050;
+$color5: #cd2c2e;
+$color6: #82b864;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Graphik";
+    color: $color4;
+}
+
+h1,
+h2,
+h3, 
+h4 {
+    color: $color3;
+    padding-top: 24px;
+}
+
+.stars {
+    color: $color2;
+   
+}
+.logo {
+    width: 20%;
+    // padding-left: 120px;
 }
 
 @mixin separation {
@@ -23,47 +58,82 @@
 
 .sep1 {
     @include separation;
-    @include color(#CD2C2E)
+    @include color($color5);
 }
 
 .sep2 {
     @include separation;
-    @include color(#82B864)
+    @include color($color6);
 }
 
-
 ul {
-    font-family: 'Graphik';
+    font-family: "Graphik";
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 footer {
+    line-height: 5px;
+    padding-bottom: 24px;
+    h2 {
+        color: $color1;
+    }
     a {
-        color:white;
+        color: white;
         text-decoration: none;
+    }
+
+    .address {
+        padding-left: 15px;
     }
 }
 
 .page {
     min-height: 100vh;
-    padding: 24px 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 24px;
+    
+
+    li {
+        list-style: none;
+    }
+
+    ol {
+        padding-top: 24px;
+        padding-bottom: 24px;
 
         li {
-            list-style:none ;
+            list-style: decimal;
         }
+    }
 
-        ol {
-            li {
-                list-style: decimal;
-            }
-        }
-        
+    form {
+        background-color: $color1;
+        padding: 16px;
+        border-radius: 15px;
+    }
+}
+
+.card {
+    background-color: $color1;
+}
+
+.card-title {
+    color:$color3;
 }
 
 .img404 {
-    height:50%;
+    height: 50%;
     width: auto;
+}
+
+.error {
+    padding: 150px;
+}
+
+.btn:hover {
+    background-color: #0074c7;
 }
