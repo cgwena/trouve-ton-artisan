@@ -1,4 +1,4 @@
-const Contact = (props) => {
+const Contact = () => {
     return (
         <form>
                 <div className="mb-3 row">
@@ -16,6 +16,8 @@ const Contact = (props) => {
                 <label for="message" className="form-label">Message</label>
                 <textarea className="form-control" id="message" rows="3"></textarea>
             </div>
+
+            <button>Envoyer</button>
         </form>
     )
 }
