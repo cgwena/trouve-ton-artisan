@@ -74,6 +74,11 @@ img {
     width: 100%;
 }
 
+.active {
+    text-decoration: underline;
+  color: $color2!important;
+}
+
 footer {
     line-height: 5px;
     padding-bottom: 24px;
