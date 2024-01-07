@@ -1,7 +1,13 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 
-const Header = ({onSearch}) => {
+const Header = ({ onSearch }) => {
+    const [activeLink, setActiveLink] = useState('/')
+
+    const handleLinkClick = (path) => {
+        setActiveLink(path);
+    };
+
     const [searchValue, setSearchValue] = useState("")
     const navigate = useNavigate()
 
@@ -29,17 +35,17 @@ const Header = ({onSearch}) => {
                         <button className="btn" type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                     <ul className="navbar-nav d-flex justify-content-around">
-                        <li className="nav-item fs-4">
-                            <Link to={"/category/Bâtiment"} className="nav-link active" aria-current="page">Bâtiment</Link>
+                        <li className={`nav-item fs-4 ${activeLink === '/category/Bâtiment' ? 'active' : ''}`}>
+                            <Link to={"/category/Bâtiment"} className="nav-link" aria-current="page" onClick={() => handleLinkClick('/category/Bâtiment')}>Bâtiment</Link>
                         </li>
-                        <li className="nav-item fs-4">
-                            <Link to={"/category/Services"} className="nav-link">Services</Link>
+                        <li className={`nav-item fs-4 ${activeLink === '/category/Services' ? 'active' : ''}`}>
+                            <Link to={"/category/Services"} className="nav-link" aria-current="page" onClick={() => handleLinkClick('/category/Services')}>Services</Link>
                         </li>
-                        <li className="nav-item fs-4">
-                            <Link to={"/category/Fabrication"} className="nav-link">Fabrication</Link>
+                        <li className={`nav-item fs-4 ${activeLink === '/category/Fabrication' ? 'active' : ''}`}>
+                            <Link to={"/category/Fabrication"} className="nav-link" aria-current="page" onClick={() => handleLinkClick('/category/Fabrication')}>Fabrication</Link>
                         </li>
-                        <li className="nav-item fs-4">
-                            <Link to={"/category/Alimentation"} className="nav-link">Alimentation</Link>
+                        <li className={`nav-item fs-4 ${activeLink === '/category/Alimentation' ? 'active' : ''}`}>
+                            <Link to={"/category/Alimentation"} className="nav-link" aria-current="page" onClick={() => handleLinkClick('/category/Alimentation')}>Alimentation</Link>
                         </li>
                     </ul>
                 </div>
