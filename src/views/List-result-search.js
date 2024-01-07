@@ -21,7 +21,7 @@ const List = () => {
   })
   return (
     <div className="page">
-      <h1>Les artisans de la région</h1>
+      <h1>Les artisans de la région dans la catégorie {artisanCategory}</h1>
       <div className="sep1"></div>
       <div className='row list-card'>
           {artisans}

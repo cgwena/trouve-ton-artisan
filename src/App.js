@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import './App.css';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './views/Home';
@@ -27,7 +27,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/results" element={<Results data={list} searchTerm={searchTerm} />} />
         <Route path="/details/:artisanId" element={<Details />} />
-        <Route path="/:artisanCategory" element={<List />} />
+        <Route path="/category/:artisanCategory" element={<List />} />
         <Route path="/*" element={<Page404 />} />
       </Routes>
       <Footer />

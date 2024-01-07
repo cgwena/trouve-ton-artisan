@@ -27,7 +27,7 @@ const Details = () => {
                 />
         
             </div>
-            <h5>Contacter l'artisan</h5>
+            
             <Contact />
         </div>
     )

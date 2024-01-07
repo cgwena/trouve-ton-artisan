@@ -8,7 +8,7 @@ const Rating = ({ note }) => {
     const emptyStarsCount = emptyStars.slice(Math.floor(parsedNote))
     
     return (
-        <div>
+        <div className="stars">
             {fullStarsCount.map(fullStarsCount => (
                 <span>{fullStarsCount}</span>
             ))}
