@@ -21,32 +21,6 @@ $color4: #384050;
 $color5: #cd2c2e;
 $color6: #82b864;
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Graphik";
-    color: $color4;
-}
-
-h1,
-h2,
-h3, 
-h4 {
-    color: $color3;
-    padding-top: 24px;
-}
-
-.stars {
-    color: $color2;
-   
-}
-.logo {
-    width: 20%;
-    // padding-left: 120px;
-}
-
 @mixin separation {
     width: 50px;
     height: 15px;
@@ -56,14 +30,22 @@ h4 {
     background-color: $background;
 }
 
-.sep1 {
-    @include separation;
-    @include color($color5);
+* {
+    box-sizing: border-box;
+    // border: red 1px solid;
 }
 
-.sep2 {
-    @include separation;
-    @include color($color6);
+body {
+    font-family: "Graphik";
+    color: $color4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $color3;
+    padding-top: 24px;
 }
 
 ul {
@@ -71,16 +53,27 @@ ul {
 }
 
 img {
-    width: 100%;
+        width: 100%;
 }
+
+nav {
+    display: flex;
+
+    a {
+        width: 50%;
+        align-self: flex-start;
+    }
+}
+
+
 
 .active {
-    text-decoration: underline;
-  color: $color2!important;
-}
+        text-decoration: underline;
+        color: $color2 !important;
+    }
 
 footer {
-    line-height: 5px;
+    
     padding-bottom: 24px;
     h2 {
         color: $color1;
@@ -91,16 +84,16 @@ footer {
     }
 
     .address {
+        line-height: 5px;
         padding-left: 15px;
     }
 }
 
 .page {
     min-height: 100vh;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 24px;
-    
 
     li {
         list-style: none;
@@ -120,14 +113,32 @@ footer {
         padding: 16px;
         border-radius: 15px;
     }
+
+    .sep1 {
+        @include separation;
+        @include color($color5);
+    }
+
+    .sep2 {
+        @include separation;
+        @include color($color6);
+    }
 }
 
 .card {
     background-color: $color1;
-}
 
-.card-title {
-    color:$color3;
+    .card-title {
+        color: $color3;
+    }
+
+    .stars {
+        color: $color2;
+    }
+
+    .btn:hover {
+        background-color: #0074c7;
+    }
 }
 
 .img404 {
@@ -139,6 +150,15 @@ footer {
     padding: 150px;
 }
 
-.btn:hover {
-    background-color: #0074c7;
+@media (min-width: 992px) {
+    .page {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 }

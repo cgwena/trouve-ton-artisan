@@ -19,7 +19,7 @@ const Footer = () => {
                     </address>
                 </div>
                 <hr></hr>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between flex-wrap">
                     <a href="#">Mentions légales</a>
                     <a href="#">Données personnelles</a>
                     <a href="#">Accessibilité : conforme</a>
