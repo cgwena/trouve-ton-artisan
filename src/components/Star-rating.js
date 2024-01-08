@@ -4,8 +4,8 @@ const Rating = ({ note }) => {
 
     const parsedNote = parseFloat(note)
 
-    const fullStarsCount = fullStars.slice(5 - Math.floor(parsedNote))
-    const emptyStarsCount = emptyStars.slice(Math.floor(parsedNote))
+    const fullStarsCount = fullStars.slice(5 - Math.round(parsedNote))
+    const emptyStarsCount = emptyStars.slice(Math.round(parsedNote))
     
     return (
         <div className="stars">
