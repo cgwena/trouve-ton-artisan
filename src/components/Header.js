@@ -18,7 +18,6 @@ const Header = ({ onSearch }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         onSearch(searchValue);
-        console.log("Search submitted:", searchValue);
         navigate("/results")
     }
 
