@@ -1,18 +1,27 @@
 import { useRef } from "react"
 import ReCAPTCHA from "react-google-recaptcha"
+import DOMPurify from 'dompurify';
 
 const Contact = () => {
     const captchaRef = useRef(null)
     const handleSubmit = (e) => {
         e.preventDefault();
         const token = captchaRef.current.getValue();
-        console.log(token)
+        const name = DOMPurify.sanitize(e.target.elements.name.value);
+        const subject = DOMPurify.sanitize(e.target.elements.subject.value);
+        const message = DOMPurify.sanitize(e.target.elements.message.value);
+
+        // Effectuez le traitement des données ici
+        console.log("Nom:", name);
+        console.log("Objet:", subject);
+        console.log("Message:", message);
+        console.log("Token:", token);
         captchaRef.current.reset();
         
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form method="post" onSubmit={handleSubmit}>
             <h5>Contacter l'artisan</h5>
             <div className="mb-3 row">
                 <div className=" col-lg-6 col-md-6">
