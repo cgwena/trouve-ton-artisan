@@ -32,7 +32,6 @@ $color6: #82b864;
 
 * {
     box-sizing: border-box;
-    // border: red 1px solid;
 }
 
 body {
@@ -53,7 +52,7 @@ ul {
 }
 
 img {
-        width: 100%;
+    width: 100%;
 }
 
 nav {
@@ -65,15 +64,12 @@ nav {
     }
 }
 
-
-
 .active {
-        text-decoration: underline;
-        color: $color2 !important;
-    }
+    text-decoration: underline;
+    color: $color2 !important;
+}
 
 footer {
-    
     padding-bottom: 24px;
     h2 {
         color: $color1;
@@ -86,6 +82,10 @@ footer {
     .address {
         line-height: 5px;
         padding-left: 15px;
+    }
+
+    .city {
+        font-size: 2rem;
     }
 }
 
@@ -157,8 +157,11 @@ footer {
     }
 
     .collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    img {
+        width: 50%;
+    }
 }

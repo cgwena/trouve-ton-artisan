@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-import list from '../datas/datas.json';
+import data from '../datas/datas.json';
 import Card from '../components/Card-artisan-detail';
 import About from '../components/About';
 import Contact from '../components/Contact';
@@ -9,13 +9,13 @@ const Details = () => {
 
     const { artisanId } = useParams()
 
-    const selectedArtisan = list.find(artisan => artisan.id === artisanId)
+    const selectedArtisan = data.find(artisan => artisan.id === artisanId)
 
     return (
-        <div className="page">
+        <section className="page">
             <h2>{selectedArtisan.name}</h2>
             <div className="sep1"></div>
-            <div className='row list-card'>
+            <ul className='row list-card'>
                 <Card
                     specialty={selectedArtisan.specialty}
                     location={selectedArtisan.location}
@@ -25,11 +25,9 @@ const Details = () => {
                 <About
                     about={selectedArtisan.about} 
                 />
-        
-            </div>
-            
+            </ul>
             <Contact />
-        </div>
+        </section>
     )
 }
 

@@ -5,7 +5,6 @@ const Card = (props) => {
         <li className="col-lg-6 col-md-6" key={props.id}>
             <div className="card m-3">
                 <div className="card-body">
-                    <h3 className="card-title text-center">{props.name}</h3>
                     <div className='text-center'>
                         <Rating note={props.note} />
                     </div>

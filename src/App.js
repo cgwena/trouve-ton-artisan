@@ -4,13 +4,12 @@ import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './views/Home';
-import List from './views/List-result-search';
-import Results from "./views/Search-results";
+import Category from './views/Category-search';
+import Result from "./views/Search-results";
 import Details from './views/Details';
 import Page404 from './views/404';
+import data from './datas/datas.json'
 import './App.scss';
-import list from './datas/datas.json'
-
 
 
 function App() {
@@ -25,9 +24,9 @@ function App() {
       <Header onSearch={handleSearch} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/results" element={<Results data={list} searchTerm={searchTerm} />} />
+        <Route path="/results" element={<Result data={data} searchTerm={searchTerm} />} />
         <Route path="/details/:artisanId" element={<Details />} />
-        <Route path="/category/:artisanCategory" element={<List />} />
+        <Route path="/category/:artisanCategory" element={<Category />} />
         <Route path="/*" element={<Page404 />} />
       </Routes>
       <Footer />
