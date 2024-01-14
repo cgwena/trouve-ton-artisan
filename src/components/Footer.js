@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="container">
                 <div>
                     <address>
-                        <h2>Lyon</h2>
+                        <p className="city">Lyon</p>
                         <div className="d-flex">
                             <i className="fa-solid fa-location-dot"></i>
                             <div className="address">
@@ -13,9 +13,8 @@ const Footer = () => {
                                 <p>69269 LYON CEDEX 02</p>
                                 <p>FRANCE</p></div>
                         </div>
-                        
                         <i className="fa-solid fa-phone"></i>
-                        <a href="tel:04 26 73 4000"> +33 (0)4 26 73 4000</a>
+                        <a href="tel:0426734000"> +33 (0)4 26 73 4000</a>
                     </address>
                 </div>
                 <hr></hr>

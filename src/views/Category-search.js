@@ -1,13 +1,11 @@
 import { useParams } from 'react-router-dom';
-
-import list from '../datas/datas.json';
+import data from '../datas/datas.json';
 import Card from '../components/Card-artisan';
 
-const List = () => {
-
+const Category = () => {
   const { artisanCategory } = useParams()
-  
-  const selectedArtisans = list.filter(artisan => artisan.category === artisanCategory)
+
+  const selectedArtisans = data.filter(artisan => artisan.category === artisanCategory)
 
   const artisans = selectedArtisans.map(artisan => {
     return <Card
@@ -20,14 +18,14 @@ const List = () => {
       note={artisan.note}/>
   })
   return (
-    <div className="page">
+    <section className="page">
       <h1>Les artisans de la région dans la catégorie {artisanCategory}</h1>
       <div className="sep1"></div>
       <div className='row list-card'>
           {artisans}
       </div>
-    </div>
+    </section>
   )
 }
 
-export default List
+export default Category
