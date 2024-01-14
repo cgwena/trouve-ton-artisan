@@ -68,3 +68,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Livrables attendus
+Contenu des pages :
+Le footer : 
+Le footer est identique sur toutes les pages. 
+Un menu pour les pages légales (mentions légales, données personnelles, accessibilité, cookies…). Ces pages devront être vides et seront remplies plus tard par un cabinet spécialisé. 
+L’adresse et les contacts de l’antenne à Lyon présent : 
+101 cours Charlemagne 
+CS 20033 
+69269 LYON CEDEX 02 
+France 
++33 (0)4 26 73 40 00  
+
+Le header : 
+Le header est présent sur toutes les pages. 
+Le logo avec un lien qui ramène vers la page d’accueil. 
+Un menu avec des liens vers les pages « Bâtiment », « Services », « Fabrication » et « Alimentation ». 
+Une barre de recherche qui devra faire ressortir les artisans en cherchant dans les noms, spécialités et ville. 
+
+Une page d’accueil avec : 
+L'explication étape par étape du fonctionnement du site.
+Les trois artisans du mois avec pour chacun : 
+1. Le nom de l’artisan ou de l’entreprise. 
+2. Sa note sur cinq avec des étoiles. 
+3. Sa spécialité. 
+4. Sa localisation. 
+
+Une page avec la liste des artisans selon la catégorie/recherche avec :
+Des petites fiches pour chaque artisan qui contiennent :
+1. Le nom de l’artisan ou de l’entreprise. 
+2. Sa note sur cinq avec des étoiles. 
+3. Sa spécialité. 
+4. Sa localisation. 
+Chaque fiche doit être cliquable et renvoyer vers la fiche complète de l'artisan.
+
+Une page « fiche artisan » avec :
+Le nom de l'artisan ou de l'entreprise.
+Sa note avec des étoiles.
+Sa spécialité.
+Sa localisation.
+Une rubrique « À propos ».
+Un formulaire de contact (nom, objet et message) qui envoie un email à l'artisan.
+Un lien vers le site web de l'artisan le cas échéant.
+
+Une page 404 avec : 
+Une image. 
+Le texte "404". 
+Elle devra apparaître dès lors qu'on essaie d'accéder à autre chose que la page d'accueil. 
+
+Vous penserez référencement en ajoutant un titre et une description à votre page à destination des moteurs de recherche. 
