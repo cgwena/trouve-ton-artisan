@@ -19,14 +19,14 @@ const Footer = () => {
                 </div>
                 <hr></hr>
                 <div className="d-flex justify-content-between flex-wrap">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Données personnelles</a>
-                    <a href="#">Accessibilité : conforme</a>
-                    <a href="#">Presse</a>
-                    <a href="#">Marchés publics</a>
-                    <a href="#">Venir à la région</a>
-                    <a href="#">Contacts</a>
-                    <a href="#">Gestions des cookies</a>
+                    <p>Mentions légales</p>
+                    <p>Données personnelles</p>
+                    <p>Accessibilité : conforme</p>
+                    <p>Presse</p>
+                    <p>Marchés publics</p>
+                    <p>Venir à la région</p>
+                    <p>Contacts</p>
+                    <p>Gestions des cookies</p>
                 </div>
             </div>
         </footer>

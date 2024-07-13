@@ -11,10 +11,10 @@ const Contact = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const token = captchaRef.current.getValue();
-        const name = DOMPurify.sanitize(form.current.name.value);
-        const subject = DOMPurify.sanitize(form.current.subject.value);
-        const message = DOMPurify.sanitize(form.current.message.value);
+        // const token = captchaRef.current.getValue();
+        // const name = DOMPurify.sanitize(form.current.name.value);
+        // const subject = DOMPurify.sanitize(form.current.subject.value);
+        // const message = DOMPurify.sanitize(form.current.message.value);
         
         captchaRef.current.reset();
         setIsFormSubmitted(true)
